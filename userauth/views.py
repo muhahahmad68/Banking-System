@@ -53,6 +53,6 @@ def LoginView(request):
 
 
 def LogoutView(request):
-    logout(request.user)
+    logout(request)
     messages.success(request, "Successfully logged out")
     return redirect('sign-in')
